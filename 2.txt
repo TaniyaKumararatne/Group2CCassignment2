@@ -1,0 +1,47 @@
+Sri Lanka generates approximately 7000MT of daily solid waste with the 
+Western Province accounting for nearly 60% of waste generation. 
+We are here to help to reduce and manage garbage in every household.
+
+Undernourishment among women and children under five in Sri Lanka, 
+particularly those who reside on plantations, continues to be a 
+persistent development problem. At the same time nearly 4000MTof food waste 
+is genereted daily.
+
+Manage Lanka is a Professional Waste Management and Excess Food Management Platform. Here we will provide you only interesting content, 
+            which you will like very much. We're dedicated to providing you the best of Waste Management and Excess Food Management, with a focus on dependability and Make day today life easier.
+             We're working to turn our passion for Waste Management and Excess Food Management into a booming online website. We hope you enjoy our Waste Management and Excess Food Management as
+              much as we enjoy offering them to you.
+
+            I will keep posting more important posts on my Website for all of you. Please give your support and love.
+
+
+
+To be the leading management organization of waste management & excess food management in Sri Lanka.
+
+
+
+
+<?php 
+require_once("config.php"); 
+if(isset($_POST['sublogin'])){ 
+$login = $_POST['login_var'];
+$password = $_POST['password'];
+$query = "select * from users where ( username='$login' OR email = '$login')";
+$res = mysqli_query($dbc,$query);
+$numRows = mysqli_num_rows($res);
+if($numRows  == 1){
+        $row = mysqli_fetch_assoc($res);
+        if(password_verify($password,$row['password'])){
+           $_SESSION["login_sess"]="1"; 
+             $_SESSION["login_email"]= $row['email'];
+  header("location:Home.html");
+        }
+        else{ 
+     header("location:login.php?loginerror=".$login);
+        }
+    }
+    else{
+  header("location:login.php?loginerror=".$login);
+    }
+}
+?>

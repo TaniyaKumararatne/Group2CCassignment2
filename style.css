@@ -1,0 +1,99 @@
+body{
+  background-color: #84a98c;
+}
+     .login_form{
+         /*margin-top: 25%;
+      background: whitesmoke;
+      padding: 30px; 
+         box-shadow: 0px 1px 36px 5px rgba(0,0,0,0.28);
+         border-radius: 5px;*/
+         background:whitesmoke;
+         padding-left: 25px; 
+          padding-right: 25px; 
+           padding-bottom:5px; 
+          box-shadow: 0px 1px 36px 5px rgba(0,0,0,0.28);
+          border-radius: 5px;
+          height: 300px;
+          width: 450px;
+     }
+     .login2_form{
+    
+      background:#cad2c5;
+      padding-left: 25px; 
+       padding-right: 25px; 
+        padding-bottom:5px; 
+       box-shadow: 0px 1px 36px 5px rgba(0,0,0,0.28);
+       border-radius: 5px;
+       height: 400px;
+       width: 600px;
+  }
+     .form_btn{ 
+         background: #354f52;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+        border: none;
+        color: #fff; 
+        width: 100% ;
+      
+      }
+      .label_txt{ 
+    font-size: 12px; 
+       }  
+       .form-control{
+        align-items: center;
+        
+      }
+       .signup_form{ 
+        background:whitesmoke;
+        padding-left: 25px; 
+         padding-right: 25px; 
+          padding-bottom:5px; 
+         box-shadow: 0px 1px 36px 5px rgba(0,0,0,0.28);
+         border-radius: 5px;
+         height: 600px;
+         width: 450px;
+        }
+        .logo{ 
+          height: 200px; 
+          width: 600px; 
+          display: block;
+            padding-bottom: 30px;
+            padding-left: 100px;
+         text-align: center;
+         }
+         .logo2{ 
+        
+            height: 180px; 
+            width: 400px; 
+            display: block;
+              padding-bottom: 30px;
+              padding-left: 150px;
+           text-align: center;
+           }
+      
+        
+            
+         
+         .errmsg{ 
+      margin: 2px auto;
+      border-radius: 5px;
+      border: 1px solid red;
+      background: pink;
+      text-align: left;
+      color: brown;
+      padding: 1px;
+    }
+    .successmsg{
+      margin: 5px auto;
+      border-radius: 5px;
+      border: 1px solid green;
+      background:rgb(106, 154, 106);
+      text-align: left;
+      color: white;
+      padding: 10px;
+    }
+
+.check {
+text-align:center;
+color: rgba(255, 0, 0, 0.537);
+font-size: 60px;
+}
